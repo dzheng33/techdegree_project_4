@@ -1,2 +1,49 @@
-$primary-text-color: #777;
-$secondary-color: #58e1c1;
+//color variables
+$text-color: #777;
+$primary-color: #58e1c1;
+$theme-color: #51ddfc;
+$white: #fff;
+$error-background: #e4757a;
+$info-background: #927bc1;
+$success-background: #63cc82;
+$warning-background: #fd7856;
+
+//breakpoint
+$breakpoint: 768px;
+
+//font
+$font: 'Lato', sans-serif;
+$small-font-weight: 300;
+
+
+//percentage
+$hundy: 100%;
+
+//functions
+@function divide12 ($num) {
+    @return ((100% / 12) * $num);
+}
+
+//maps
+$themes: (
+    '1':  $info-background,
+    '2':  $warning-background,
+    '3':  #deb2ee,
+    '4':  #7ee6fd,
+    '5':  #88d9a0,
+    '6':  #4da2bb,
+    '7':  #ec9fa3,
+    '8':  #fd9f85,
+    '9':  $error-background,
+    '10': $success-background,
+    '11': $theme-color,
+    '12': #80e8d1,
+);
+
+$btnhover: (
+    '.default': $theme-color,
+    '.error': $error-background,
+    '.info': $info-background,
+    '.success': $success-background,
+    '.warning': $warning-background,
+);
